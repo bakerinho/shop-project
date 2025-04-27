@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     color: var(--color);
+    box-sizing: border-box;
 }
 
 :root {
@@ -34,6 +35,25 @@ body.light {
     border-bottom: 1px solid var(--gray);
     z-index: 1000;
     background-color: var(--background-color);
+    padding: 1rem;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.nav-button, .link {
+    all: unset;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cart-toggle {
+
 }
 
 .main-content{
@@ -55,3 +75,4 @@ body.light {
     justify-items: center;
     align-items: center;
 }
+
