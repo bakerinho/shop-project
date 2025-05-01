@@ -1,15 +1,15 @@
+:root {
+    --background-color: rgb(39, 39, 39);
+    --color: #fff;
+    --gray: rgb(71, 71, 71);
+}
+
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
     color: var(--color);
     box-sizing: border-box;
-}
-
-:root {
-    --background-color: rgb(39, 39, 39);
-    --color: #fff;
-    --gray: rgb(71, 71, 71);
 }
 
 body.light {
@@ -52,10 +52,6 @@ body.light {
     font-size: 1.5rem;
 }
 
-.cart-toggle {
-
-}
-
 .main-content{
     width: 100%;
 }
@@ -71,8 +67,8 @@ body.light {
     height: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 100px;
     justify-items: center;
     align-items: center;
+    padding: 0 1rem;
 }
-
