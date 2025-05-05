@@ -1,4 +1,4 @@
-// toggle dark/light mode
+// dark/light mode toggle
 
 const themeToggle = document.querySelector('.theme-toggle')
 
@@ -16,5 +16,5 @@ themeToggle.addEventListener('click', () => {
 const cartToggle = document.querySelector('.cart-toggle')
 
 cartToggle.addEventListener('click', () => {
-  
+
 })
