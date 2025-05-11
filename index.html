@@ -1,42 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>GigaShop</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <nav class="nav-bar">
-            <a class="link nav-button" href="/index.html">
-                GigaShop
-            </a>
-            <button class="theme-toggle nav-button">
-                Motyw
-            </button>
-            <button class="nav-button">
-                Menu
-            </button>
-            <button class="cart-toggle nav-button" aria-expanded="false">
-                Koszyk (0)
-            </button>
-        </nav>
-        <div class="cart-panel" aria-expanded="false" hidden>
-                
+      <nav class="nav-bar-container">
+        <div class="nav">
+          <a class="link nav-button" href="/index.html"> GigaShop </a>
+          <div class="settings">
+            <i class="fa fa-gear" style="font-size: 20px"></i>
+            <div class="settings-content">
+              <p class="settings-option theme-toggle">Change theme to:</p>
+              <p class="settings-option">2</p>
+            </div>
+          </div>
         </div>
-        <main class="main-content">
-            <div class="category-name">
-                AAA
-            </div>
-            <div class="items-container">
-                <div class="item item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex eveniet est vitae inventore doloremque ipsam voluptates repudiandae, dolorem quia laborum commodi possimus eligendi eum dolor culpa voluptas eos ut?</div>
-                <div class="item item-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam voluptatem non delectus ipsum debitis labore ad praesentium impedit iusto minima amet corrupti, maiores vel sapiente. Ullam qui laborum voluptatum repellendus.</div>
-                <div class="item item-3"><p>c</p></div>
-                <div class="item item-4">d</div>
-            </div>
-        </main>
+        <div class="nav">
+          <button class="nav-button">Menu</button>
+        </div>
+        <div class="nav">
+          <button class="cart-toggle nav-button" aria-expanded="false">
+            Koszyk
+          </button>
+        </div>
+      </nav>
+      <div class="cart-panel" aria-expanded="false" hidden></div>
+      <main class="main-content">
+        <div class="category-name">AAA</div>
+        <div class="items-container">
+          <div class="item item-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            ex eveniet est vitae inventore doloremque ipsam voluptates
+            repudiandae, dolorem quia laborum commodi possimus eligendi eum
+            dolor culpa voluptas eos ut?
+          </div>
+          <div class="item item-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+            voluptatem non delectus ipsum debitis labore ad praesentium impedit
+            iusto minima amet corrupti, maiores vel sapiente. Ullam qui laborum
+            voluptatum repellendus.
+          </div>
+          <div class="item item-3"><p>c</p></div>
+          <div class="item item-4">d</div>
+        </div>
+      </main>
     </div>
-</body>
-    <script src="js/script.js"></script> 
+    <script src="js/main.js"></script>
+  </body>
 </html>
+
