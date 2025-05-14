@@ -12,13 +12,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="menu" aria-expanded="false">
+      <aside class="menu" aria-expanded="false">
        <a class="menu-link link" href="">Smartfon</a>
         <a class="menu-link link" href="">Smartwatch</a>
         <a class="menu-link link" href="">Tablet</a>
         <a class="menu-link link" href="">O nas</a>
         <a class="menu-link link" href="">Kontakt</a>
-      </div>
+      </aside>
       <div class="content-container">
         <nav class="nav-bar-container">
           <div class="nav">
@@ -35,7 +35,7 @@
             <button class="nav-button menu-btn">Menu</button>
           </div>
           <div class="nav">
-            <button class="cart-toggle nav-button">
+            <button class="nav-button cart-toggle">
               Koszyk
             </button>
           </div>
@@ -64,10 +64,18 @@
           
         </footer>
       </div>
-      
     </div>
-
-    <script src="js/main.js" defer></script>
+    <aside class="cart" aria-expanded="true">
+      <div class="cart-top">
+        <div class="cart-count">Koszyk (0)</div>
+        <div class="cart-exit">Zamknij</div>
+      </div>
+      <div class="cart-items">
+        <div class="info"><p>Twój koszyk jest pusty.</p></div>
+        <div class="item-1">1</div>
+      </div>
+    </aside>
+    <script src="js/main.js"></script>
   </body>
 </html>
 
