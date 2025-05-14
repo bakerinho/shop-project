@@ -1,6 +1,7 @@
 :root {
   --background-color: rgb(39, 39, 39);
   --color: #fff;
+  --oposite-color: #000;
   --gray: rgb(71, 71, 71);
   --dark-gray: rgb(51, 51, 51);
   --text-stroke:
@@ -25,6 +26,7 @@ html {
 body.light {
   --background-color: #fff;
   --color: black;
+  --oposite-color: #fff;
   --gray: #dfdfdf;
   --dark-gray: #cacaca;
   --text-stroke: 
@@ -180,6 +182,6 @@ body.light {
 }
 
 .menu-link:hover {
-  color: var(--gray);
+  color: var(--oposite-color);
 }
 

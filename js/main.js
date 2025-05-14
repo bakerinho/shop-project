@@ -1,11 +1,5 @@
-// sets max width based on screen width and theme
-
+// sets theme
 window.addEventListener('load', () => {
-  const el = document.querySelector('.container')
-  const width = el.offsetWidth
-  el.style.maxWidth = width + 'px'
-  el.style.width = '100%'
-
   if (!localStorage.getItem('theme')) {
     localStorage.setItem('theme', 'dark')
   }
@@ -22,7 +16,6 @@ window.addEventListener('load', () => {
 })
 
 // dark/light mode toggle
-
 const themeToggle = document.querySelector('.theme-toggle')
 
 themeToggle.addEventListener('click', () => {
@@ -37,8 +30,31 @@ themeToggle.addEventListener('click', () => {
     }
 })
 
-// cart toggle
+// menu toggle
+const menuToggle = document.querySelector('.menu-btn')
+const menu = document.querySelector('.menu')
+const contentContainer = document.querySelector('.content-container')
 
+menuToggle.addEventListener('click', () => {
+  const isOpen = menu.getAttribute("aria-expanded") == 'true'
+  setMenuState(menu, !isOpen)
+  console.log(isOpen)
+})
+
+document.addEventListener('click', (e) => {
+  const isClickInside = menu.contains(e.target) || menuToggle.contains(e.target);
+  if (!isClickInside) {
+    setMenuState(menu, false);
+  }
+})
+
+function setMenuState(div, isOpen){
+  div.setAttribute("aria-expanded", String(isOpen))
+  contentContainer.style.filter = isOpen ? 'blur(10px)' : 'none';
+  contentContainer.style.transition = 'filter 0.25s ease';
+}
+
+// cart toggle
 const cartToggle = document.querySelector('.cart-toggle')
 
 cartToggle.addEventListener('click', () => {
