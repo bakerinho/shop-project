@@ -64,14 +64,15 @@ cartExit.addEventListener('click', () => {
 })
 
 function setCartState(isOpen){
+  const bg = document.querySelector('.bg')
   cart.setAttribute("aria-expanded", String(isOpen))
-  container.style.filter = isOpen ? 'brightness(70%)' : 'none';
-  container.style.transition = 'filter 0.3s ease-out';
+  bg.style.filter = isOpen ? 'brightness(70%)' : 'none';
+  bg.style.transition = 'filter 0.3s ease-out';
 }
 
 // closes menu/cart if clicked somewhere else
 document.addEventListener('click', (e) => {
-  const isClickInside = (menu.contains(e.target) || menuToggle.contains(e.target) ||  cart.contains(e.target) || cartToggle.contains(e.target));
+  const isClickInside = (menu.contains(e.target) || menuToggle.contains(e.target) || (cart.contains(e.target) || cartToggle.contains(e.target)));
   if (!isClickInside) {
     setMenuState(false)
     setCartState(false)
