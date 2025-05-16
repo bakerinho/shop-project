@@ -11,68 +11,114 @@
     <title>GigaShop</title>
   </head>
   <body>
-    <div class="container">
-      <aside class="menu" aria-expanded="false">
-       <a class="menu-link link" href="">Smartfon</a>
-        <a class="menu-link link" href="">Smartwatch</a>
-        <a class="menu-link link" href="">Tablet</a>
-        <a class="menu-link link" href="">O nas</a>
-        <a class="menu-link link" href="">Kontakt</a>
-      </aside>
-      <div class="content-container">
-        <nav class="nav-bar-container">
-          <div class="nav">
-            <a class="link nav-button" href="/index.html"> GigaShop </a>
-            <div class="settings">
-              <i class="fa fa-gear" style="font-size: 20px"></i>
-              <div class="settings-content">
-                <p class="settings-option theme-toggle">Change theme to:</p>
-                <p class="settings-option">2</p>
+    <div class="bg">
+      <div class="container">
+        <aside class="menu" aria-expanded="false">
+        <a class="menu-link link" href="">Smartfon</a>
+          <a class="menu-link link" href="">Smartwatch</a>
+          <a class="menu-link link" href="">Tablet</a>
+          <a class="menu-link link" href="">O nas</a>
+          <a class="menu-link link" href="">Kontakt</a>
+        </aside>
+        <div class="content-container">
+          <nav class="nav-bar-container">
+            <div class="nav">
+              <a class="link nav-button" href="/index.html"> GigaShop </a>
+              <div class="settings">
+                <i class="fa fa-gear" style="font-size: 20px"></i>
+                <div class="settings-content">
+                  <p class="settings-option theme-toggle">Change theme to:</p>
+                  <p class="settings-option">2</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="nav">
-            <button class="nav-button menu-btn">Menu</button>
-          </div>
-          <div class="nav">
-            <button class="nav-button cart-toggle">
-              Koszyk
-            </button>
-          </div>
-        </nav>
-        <div class="cart-panel" aria-expanded="false" hidden></div>
-        <main class="main-content">
-          <div class="category-name">AAA</div>
-          <div class="items-container">
-            <div class="item item-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-              ex eveniet est vitae inventore doloremque ipsam voluptates
-              repudiandae, dolorem quia laborum commodi possimus eligendi eum
-              dolor culpa voluptas eos ut?
+            <div class="nav">
+              <button class="nav-button menu-btn">Menu</button>
             </div>
-            <div class="item item-2">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
-              voluptatem non delectus ipsum debitis labore ad praesentium impedit
-              iusto minima amet corrupti, maiores vel sapiente. Ullam qui laborum
-              voluptatum repellendus.
+            <div class="nav">
+              <button class="nav-button cart-toggle">
+                Koszyk
+              </button>
             </div>
-            <div class="item item-3"><p>c</p></div>
-            <div class="item item-4">d</div>
-          </div>
-        </main>
-        <footer>
-          
-        </footer>
+          </nav>
+          <div class="cart-panel" aria-expanded="false" hidden></div>
+          <main class="main-content">
+            <div class="category-name">AAA</div>
+            <div class="items-container">
+              <div class="item item-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+                ex eveniet est vitae inventore doloremque ipsam voluptates
+                repudiandae, dolorem quia laborum commodi possimus eligendi eum
+                dolor culpa voluptas eos ut?
+              </div>
+              <div class="item item-2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+                voluptatem non delectus ipsum debitis labore ad praesentium impedit
+                iusto minima amet corrupti, maiores vel sapiente. Ullam qui laborum
+                voluptatum repellendus.
+              </div>
+              <div class="item item-3"><p>c</p></div>
+              <div class="item item-4">d</div>
+            </div>
+          </main>
+          <footer>
+            <div class="footer-links">
+              <div class="footer-about-contact-container">
+                <div class="footer-about">
+                  <div class="footer-about-item"><p>Menu</p></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">Smartfon</a></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">Smartwatch</a></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">Tablet</a></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">O nas</a></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">Kontakt</a></div>
+                </div>
+                  <div class="footer-contact">
+                  <div class="footer-about-item"><p>Kontakt</p></div>
+                  <div class="footer-about-item"><p>info@gigashop.pl</p></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">Instagram</a></div>
+                  <div class="footer-about-item"><a class="footer-link" href="">Facebook</a></div>
+                </div>
+              </div>
+              <div class="footer-newsletter">
+                <div class="footer-about-item"><p>Dołącz do naszego newslettera</p></div>
+                <div class="footer-about-item"><input type="email" placeholder="Twój email"></div>
+              </div>
+            </div>
+            <div class="footer-info">
+              <a class="footer-link" href="">Regulamin</a>
+              <a class="footer-link" href="">Polityka prywatności</a>
+              <p>Developed by Piekarski&Pieszko</p>
+              <div></div>
+              <p>&copy; GigaShop 2025</p>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
-    <aside class="cart" aria-expanded="true">
+    <aside class="cart" aria-expanded="false">
       <div class="cart-top">
         <div class="cart-count">Koszyk (0)</div>
         <div class="cart-exit">Zamknij</div>
       </div>
       <div class="cart-items">
-        <div class="info"><p>Twój koszyk jest pusty.</p></div>
-        <div class="item-1">1</div>
+        <div class="cart-info"><p>Twój koszyk jest pusty.</p></div>
+        <div class="cart-item item-1">
+          <div class="cart-img">img</div>
+          <div class="cart-item-info">
+            <div class="cart-info-containter">
+              <div class="cart-item-name">opis</div>
+                <div class="cart-quantity-selector">
+                  <button class="item-btn item-add-quantity">+</button>
+                  <p class="item-quantity">1</p>
+                  <button class="item-btn item-subtract-quantity">-</button>
+               </div>
+              </div>
+              <div class="cart-item-container">
+                <div class="cart-item-price">2</div>
+                <p>Usuń</p>
+            </div>
+          </div>
+        </div>
       </div>
     </aside>
     <script src="js/main.js"></script>
