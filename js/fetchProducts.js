@@ -1,4 +1,5 @@
 // json-server --watch data/products.json --port 8888
+// npx json-server --watch data/products.json --port 8888
 
 export function fetchProducts() {
   const productsContainer = document.querySelector('.items-container')
