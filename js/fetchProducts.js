@@ -13,34 +13,49 @@ export function fetchProducts() {
     })
     .then(renderProducts)
     .catch(err => {
-      console.error('Error: ', err)
+      console.log("err: ", err)
       productsContainer.textContent = 'Nie udało się załadować produktów.'
     })
 
   function renderProducts(products) {
-    // removes all content if exist
-    while (productsContainer.firstChild) {
-        productsContainer.removeChild(productsContainer.firstChild)
-    }
-    
+    // get all categories
+    const categories = {}
+
     products.forEach(product => {
-      // card wrapper
+      const { category } = product
+
+      // if there is no such category - create one
+      if (!categories[category]) {
+        // title
+        const catTitle = document.createElement('h2')
+        catTitle.classList.add('category-name')
+        catTitle.textContent = category
+        productsContainer.appendChild(catTitle)
+
+        // wrapper for all products
+        const catWrapper = document.createElement('div')
+        catWrapper.classList.add('category-items')
+        productsContainer.appendChild(catWrapper)
+
+        categories[category] = catWrapper
+      }
+
+      // card/wrapper for one product
       const card = document.createElement('div')
       card.classList.add('product-card')
 
-      // title
       const title = document.createElement('h3')
       title.classList.add('product-name')
       title.textContent = product.name
       card.appendChild(title)
 
-      // price
       const price = document.createElement('p')
       price.classList.add('product-price')
       price.textContent = `${product.price} zł`
       card.appendChild(price)
 
-      productsContainer.appendChild(card)
+      // add card to correct category
+      categories[category].appendChild(card)
     })
   }
 }

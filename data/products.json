@@ -1,30 +1,85 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Smartphone X",
-      "price": 799.00
+      "id": "item-001",
+      "name": "Samsung Galaxy S25",
+      "price": 4499,
+      "ram": "8GB",
+      "processor": "Exynos 2500",
+      "rom": "128GB",
+      "category": "Smartfon"
     },
     {
-      "id": 2,
-      "name": "Smartwatch Pro",
-      "price": 199.99
+      "id": "item-002",
+      "name": "Amazon Fire HD 10",
+      "price": 899,
+      "ram": "3GB",
+      "processor": "Mediatek MT8183",
+      "rom": "64GB",
+      "category": "Tablet"
     },
     {
-      "id": 3,
-      "name": "Tablet Plus",
-      "price": 399.50
+      "id": "item-003",
+      "name": "iPhone 17",
+      "price": 4999,
+      "ram": "6GB",
+      "processor": "A18 Bionic",
+      "rom": "256GB",
+      "category": "Smartfon"
     },
     {
-      "id": 4,
-      "name": "Laptop Air",
-      "price": 999.99
+      "id": "item-004",
+      "name": "Google Pixel 10",
+      "price": 3899,
+      "ram": "8GB",
+      "processor": "Tensor G4",
+      "rom": "128GB",
+      "category": "Smartfon"
     },
     {
-      "id": 5,
-      "name": "Wireless Earbuds",
-      "price": 149.49
+      "id": "item-005",
+      "name": "Apple Watch Series 9",
+      "price": 1999,
+      "ram": "1GB",
+      "processor": "Apple S9",
+      "rom": "32GB",
+      "category": "Smartwatch"
+    },
+    {
+      "id": "item-006",
+      "name": "Samsung Galaxy Watch 6",
+      "price": 1599,
+      "ram": "1.5GB",
+      "processor": "Exynos W980",
+      "rom": "16GB",
+      "category": "Smartwatch"
+    },
+    {
+      "id": "item-007",
+      "name": "Samsung Galaxy Tab S9",
+      "price": 3999,
+      "ram": "8GB",
+      "processor": "Snapdragon 8 Gen 3",
+      "rom": "256GB",
+      "category": "Tablet"
+    },
+    {
+      "id": "item-008",
+      "name": "Garmin Fenix 8",
+      "price": 2499,
+      "ram": "1GB",
+      "processor": "Garmin Chipset",
+      "rom": "16GB",
+      "category": "Smartwatch"
+    },
+    {
+      "id": "item-009",
+      "name": "Apple iPad Pro 12.9\"",
+      "price": 5499,
+      "ram": "8GB",
+      "processor": "M4",
+      "rom": "256GB",
+      "category": "Tablet"
     }
   ]
 }
-

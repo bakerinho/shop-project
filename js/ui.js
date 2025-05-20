@@ -63,7 +63,7 @@ function setCartState(isOpen) {
   bg.style.filter = isOpen ? 'brightness(70%)' : 'none'
 }
 
-// 4) Close when clicked outside
+// Close when clicked outside
 export function initClickOutside() {
   const menuBtn = document.querySelector('.menu-btn')
   const menu = document.querySelector('.menu')
