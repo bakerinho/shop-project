@@ -1,3 +1,12 @@
+// Submit transaction
+export function submitTransaction() {
+  const submitBtn = document.querySelector('.submit-btn')
+  submitBtn.addEventListener('click', () => {
+    localStorage.setItem('cart', [])
+    location.reload()
+  })
+}
+
 // Theme
 export function initTheme() {
   if (!localStorage.getItem('theme')) {
@@ -25,10 +34,15 @@ function applyTheme() {
 export function initMenuToggle() {
   const btn = document.querySelector('.menu-btn')
   const menu = document.querySelector('.menu')
+  const open = menu.getAttribute('aria-expanded') === 'true'
 
   btn.addEventListener('click', e => {
-    const open = menu.getAttribute('aria-expanded') === 'true'
     setMenuState(!open)
+  })
+
+  const menuClose = document.querySelector('.menu-close')
+  menuClose.addEventListener('click', () => {
+    setMenuState(false)
   })
 }
 

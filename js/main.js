@@ -1,9 +1,11 @@
-import { fetchProducts } from './fetchProducts.js'
+import { fetchProducts } from './products/fetchProducts.js'
+import { initCart } from './summary/cart.js'
 import { 
   initTheme, 
   initMenuToggle, 
   initCartToggle, 
-  initClickOutside 
+  initClickOutside,
+  submitTransaction
 } from './ui.js'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,4 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCartToggle()
   initClickOutside()
   fetchProducts()
+  initCart()
+  submitTransaction()
 })
