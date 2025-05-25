@@ -6,6 +6,10 @@
 
 
 @media screen and (max-width: 780px) {
+    .nav-button {
+        font-size: var(--small-font);
+    }
+
     .main-content {
         width: 100%;
     }
@@ -22,6 +26,11 @@
         width: 100%;
     }
 
+    .summary-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
     .footer-links {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -29,10 +38,6 @@
     .footer-about-contact-container, .footer-links {
         gap: 30px;
     }
-
-    /* .footer-contact {
-        min-height: max-content;
-    } */
 
     .footer-newsletter {
         justify-self: left;
@@ -50,12 +55,12 @@
     .nav {
         min-width: min-content;
     }
-    
-    .nav-button {
-        font-size: var(--small-font);
-    }
 
     .menu-link {
+        font-size: var(--medium-large-font);
+    }
+
+    .category-name {
         font-size: var(--medium-large-font);
     }
 

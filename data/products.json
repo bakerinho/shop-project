@@ -5,79 +5,79 @@
       "name": "Samsung Galaxy S25",
       "price": 4499,
       "ram": "8GB",
-      "processor": "Exynos 2500",
+      "processor": "Exynos 2500 (2.9 GHz)",
       "rom": "128GB",
       "category": "Smartfon"
     },
     {
       "id": "item-002",
-      "name": "Amazon Fire HD 10",
-      "price": 899,
-      "ram": "3GB",
-      "processor": "Mediatek MT8183",
-      "rom": "64GB",
-      "category": "Tablet"
-    },
-    {
-      "id": "item-003",
-      "name": "iPhone 17",
-      "price": 4999,
-      "ram": "6GB",
-      "processor": "A18 Bionic",
-      "rom": "256GB",
-      "category": "Smartfon"
-    },
-    {
-      "id": "item-004",
-      "name": "Google Pixel 10",
-      "price": 3899,
-      "ram": "8GB",
-      "processor": "Tensor G4",
-      "rom": "128GB",
-      "category": "Smartfon"
-    },
-    {
-      "id": "item-005",
-      "name": "Apple Watch Series 9",
-      "price": 1999,
+      "name": "Apple Watch Series 10",
+      "price": 2199,
       "ram": "1GB",
-      "processor": "Apple S9",
+      "processor": "Apple S10 (1.8 GHz)",
       "rom": "32GB",
       "category": "Smartwatch"
     },
     {
+      "id": "item-003",
+      "name": "Amazon Fire HD 10 Plus",
+      "price": 1099,
+      "ram": "4GB",
+      "processor": "MediaTek MT8186 (2.0 GHz)",
+      "rom": "64GB",
+      "category": "Tablet"
+    },
+    {
+      "id": "item-004",
+      "name": "iPhone 16 Pro Max",
+      "price": 5999,
+      "ram": "6GB",
+      "processor": "A19 Bionic (3.2 GHz)",
+      "rom": "256GB",
+      "category": "Smartfon"
+    },
+    {
+      "id": "item-005",
+      "name": "Google Pixel 10",
+      "price": 3899,
+      "ram": "8GB",
+      "processor": "Tensor G4 (2.85 GHz)",
+      "rom": "128GB",
+      "category": "Smartfon"
+    },
+    {
       "id": "item-006",
-      "name": "Samsung Galaxy Watch 6",
-      "price": 1599,
-      "ram": "1.5GB",
-      "processor": "Exynos W980",
-      "rom": "16GB",
+      "name": "Fitbit Sense",
+      "price": 1199,
+      "ram": "512MB",
+      "processor": "Fitbit Chipset (1.2 GHz)",
+      "rom": "4GB",
       "category": "Smartwatch"
     },
     {
       "id": "item-007",
-      "name": "Samsung Galaxy Tab S9",
-      "price": 3999,
+      "name": "iPad Pro 12,9\"",
+      "price": 5499,
       "ram": "8GB",
-      "processor": "Snapdragon 8 Gen 3",
+      "processor": "M4 (3.5 GHz)",
       "rom": "256GB",
       "category": "Tablet"
     },
     {
       "id": "item-008",
-      "name": "Garmin Fenix 8",
-      "price": 2499,
-      "ram": "1GB",
-      "processor": "Garmin Chipset",
+      "name": "Samsung Galaxy Watch 7",
+      "price": 1699,
+      "ram": "1.5GB",
+      "processor": "Exynos W990 (2.5 GHz)",
       "rom": "16GB",
       "category": "Smartwatch"
     },
     {
       "id": "item-009",
-      "name": "Apple iPad Pro 12.9\"",
-      "price": 5499,
+      "name": "Samsung Galaxy Tab S10",
+      "price": 4299,
       "ram": "8GB",
-      "processor": "M4",
+      "processor": "Snapdragon 8 Gen4 (3.3 GHz)",
       "rom": "256GB",
       "category": "Tablet"
     }
