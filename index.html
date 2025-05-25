@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/mobile.css" />
     <title>GigaShop</title>
@@ -14,11 +11,11 @@
     <div class="bg">
       <div class="container">
         <aside class="menu" aria-expanded="false">
-        <a class="menu-link link" href="">Smartfon</a>
-          <a class="menu-link link" href="">Smartwatch</a>
-          <a class="menu-link link" href="">Tablet</a>
-          <a class="menu-link link" href="">O nas</a>
-          <a class="menu-link link" href="">Kontakt</a>
+        <a class="menu-link link" href="#Smartfon">Smartfon</a>
+          <a class="menu-link link" href="#Smartwatch">Smartwatch</a>
+          <a class="menu-link link" href="#Tablet">Tablet</a>
+          <a class="menu-link link" href="#Kontakt">Kontakt</a>
+          <a class="menu-link link menu-close">Zamnknij</a>
         </aside>
         <div class="content-container">
           <nav class="nav-bar-container">
@@ -28,7 +25,6 @@
                 <i class="fa fa-gear" style="font-size: 20px"></i>
                 <div class="settings-content">
                   <p class="settings-option theme-toggle">Change theme to:</p>
-                  <p class="settings-option">2</p>
                 </div>
               </div>
             </div>
@@ -36,22 +32,58 @@
               <button class="nav-button menu-btn">Menu</button>
             </div>
             <div class="nav">
-              <button class="nav-button cart-toggle">
-                Koszyk
-              </button>
+              <button class="nav-button cart-toggle cart-count">Koszyk (0)</button>
             </div>
           </nav>
           <main class="main-content">
-            <section class="items-container">
-              
+            <section class="items-container"></section>
+            <section class="summary-container hidden">
+              <form class="summary-form">
+                <div class="input-container">
+                  <label for="firstname"></label>
+                  <input type="text" id="firstname" name="firstname" class="input" placeholder="Imię" required>
+                </div>
+                <div class="input-container">
+                  <label for="lastname"></label>
+                  <input type="text" id="lastname" name="lastname" class="input" placeholder="Nazwisko" required>
+                </div>
+                <div class="input-container">
+                  <label for="email"></label>
+                  <input type="email" id="email" name="email" class="input" placeholder="Adres e-mail" required>
+                </div>
+                <div class="input-container">
+                  <label for="address"></label>
+                  <input type="text" id="address" name="address" class="input" placeholder="Ulica i numer" required>
+                </div>
+                <div class="input-container">
+                  <label for="city"></label>
+                  <input type="text" id="city" name="city" class="input" placeholder="Miasto" required>
+                </div>
+                <div class="input-container">
+                  <label for="zip"></label>
+                    <input
+                      type="text"
+                      id="zip"
+                      name="zip"
+                      class="input"
+                      placeholder="Kod pocztowy (xx-xxx)"
+                      pattern="[0-9]{2}-[0-9]{3}"
+                      title="Wpisz w formacie 12-345"
+                      maxlength="6"
+                      inputmode="numeric"
+                      required
+                    >
+                </div>
+                <button type="submit" class="submit-btn">Złóż zamówienie</button>
+              </form>
+              <div class="total">
+                <div class="total-info">Do zapłaty:</div>
+                <div class="total-amount"></div>
+                <div class="back-shopping">Kontynuuj zakupy</div>
+              </div>
             </section>
-            <section>
-              
-            </section>
-            <!-- <div class="category-name">AAA</div>
-            <div class="items-container">test</div> -->
           </main>
-          <footer>
+          <footer id="#Kontakt">
             <div class="footer-links">
               <div class="footer-about-contact-container">
                 <div class="footer-about">
@@ -71,9 +103,9 @@
               </div>
               <div class="footer-newsletter">
                 <div class="footer-about-item"><p>Dołącz do naszego newslettera</p></div>
-                <div class="email-input">
-                  <input type="email" placeholder="Twój email">
-                  <span style='font-size:40px;'>&#8599;</span>
+                <div class="input-container">
+                  <input class="input" type="email" placeholder="Twój email">
+                  <span style='font-size:25px;'>&#8599;</span>
                 </div>
               </div>
             </div>
@@ -93,47 +125,9 @@
         <div class="cart-exit">Zamknij</div>
       </div>
       <div class="cart-items">
-        <div class="cart-info"><p>Twój koszyk jest pusty.</p></div>
-
-        <div class="cart-item item-1">
-          <div class="cart-img">img</div>
-          <div class="cart-item-info">
-            <div class="cart-info-containter">
-              <div class="cart-item-name">opis</div>
-                <div class="cart-quantity-selector">
-                  <button class="item-btn item-add-quantity">+</button>
-                  <a class="item-quantity">1</a>
-                  <button class="item-btn item-subtract-quantity">-</button>
-               </div>
-              </div>
-              <div class="cart-item-container">
-                <div class="cart-item-price">2</div>
-                <p>Usuń</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="cart-item item-1">
-          <div class="cart-img">img</div>
-          <div class="cart-item-info">
-            <div class="cart-info-containter">
-              <div class="cart-item-name">Zajebisty w huj samsung</div>
-                <div class="cart-quantity-selector">
-                  <button class="item-btn item-add-quantity">+</button>
-                  <a class="item-quantity">991</a>
-                  <button class="item-btn item-subtract-quantity">-</button>
-               </div>
-              </div>
-              <div class="cart-item-container">
-                <div class="cart-item-price">288</div>
-                <p>Usuń</p>
-            </div>
-          </div>
-        </div>
       </div>
     </aside>
-    <script type="module" src="js/fetchProducts.js"></script>
+    <script type="module" src="js/products/renderProducts.js"></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
-
