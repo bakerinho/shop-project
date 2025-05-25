@@ -5,7 +5,10 @@ import { renderProducts } from "./renderProducts.js"
 
 export function fetchProducts() {
   const productsContainer = document.querySelector('.items-container')
-  productsContainer.textContent = 'Ładowanie...'
+  const info = document.createElement('h1')
+  productsContainer.append(info)
+  
+  info.textContent = 'Ładowanie...'
 
   fetch('http://localhost:8888/products')
   .then(response => {
@@ -17,6 +20,6 @@ export function fetchProducts() {
     .then(renderProducts)
     .catch(err => {
       console.log("err: ", err)
-      productsContainer.textContent = 'Nie udało się załadować produktów.'
+      info.textContent = 'Nie udało się załadować produktów.'
     })
 }
