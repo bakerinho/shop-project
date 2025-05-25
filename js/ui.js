@@ -91,3 +91,12 @@ export function initClickOutside() {
     if (!insideCart) setCartState(false)
   })
 }
+
+export function joinNewsletter() {
+  const btn = document.querySelector('.newsletter-btn')
+  const input = document.querySelector('.newsletter-input')
+
+  btn.addEventListener('click', () => {
+    input.value = ''
+  })
+}

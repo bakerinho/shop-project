@@ -5,7 +5,8 @@ import {
   initMenuToggle, 
   initCartToggle, 
   initClickOutside,
-  submitTransaction
+  submitTransaction,
+  joinNewsletter
 } from './ui.js'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchProducts()
   initCart()
   submitTransaction()
+  joinNewsletter()
 })

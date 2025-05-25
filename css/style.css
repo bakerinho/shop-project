@@ -159,7 +159,7 @@ body.light {
   border-radius: 5px;
 }
 
-.fa-gear, .cart-exit, .settings-option:hover{
+.fa-gear, .cart-exit, .settings-option:hover, .newsletter-btn{
   cursor: pointer;
 }
 
